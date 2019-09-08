@@ -1,0 +1,79 @@
+5. Number of Instances: 214
+%
+% 6. Number of Attributes: 10 (including an Id#) plus the class attribute
+%    -- all attributes are continuously valued
+%
+% 7. Attribute Information:
+%    1. Id number: 1 to 214
+%    2. RI: refractive index
+%    3. Na: Sodium (unit measurement: weight percent in corresponding oxide, as
+%                   are attributes 4-10)
+%    4. Mg: Magnesium
+%    5. Al: Aluminum
+%    6. Si: Silicon
+%    7. K: Potassium
+%    8. Ca: Calcium
+%    9. Ba: Barium
+%   10. Fe: Iron
+%   11. Type of glass: (class attribute)
+%       -- 1 building_windows_float_processed
+%       -- 2 building_windows_non_float_processed
+%       -- 3 vehicle_windows_float_processed
+%       -- 4 vehicle_windows_non_float_processed (none in this database)
+%       -- 5 containers
+%       -- 6 tableware
+%       -- 7 headlamps
+%
+% 8. Missing Attribute Values: None
+%
+% Summary Statistics:
+% Attribute:   Min     Max      Mean     SD      Correlation with class
+%  2. RI:       1.5112  1.5339   1.5184  0.0030  -0.1642
+%  3. Na:      10.73   17.38    13.4079  0.8166   0.5030
+%  4. Mg:       0       4.49     2.6845  1.4424  -0.7447
+%  5. Al:       0.29    3.5      1.4449  0.4993   0.5988
+%  6. Si:      69.81   75.41    72.6509  0.7745   0.1515
+%  7. K:        0       6.21     0.4971  0.6522  -0.0100
+%  8. Ca:       5.43   16.19     8.9570  1.4232   0.0007
+%  9. Ba:       0       3.15     0.1750  0.4972   0.5751
+% 10. Fe:       0       0.51     0.0570  0.0974  -0.1879
+%
+% 9. Class Distribution: (out of 214 total instances)
+%     -- 163 Window glass (building windows and vehicle windows)
+%        -- 87 float processed
+%           -- 70 building windows
+%           -- 17 vehicle windows
+%        -- 76 non-float processed
+%           -- 76 building windows
+%           -- 0 vehicle windows
+%     -- 51 Non-window glass
+%        -- 13 containers
+%        -- 9 tableware
+%        -- 29 headlamps
+%
+%
+%
+%
+%
+%
+%
+% Relabeled values in attribute 'Type'
+%    From: '1'                     To: 'build wind float'
+%    From: '2'                     To: 'build wind non-float'
+%    From: '3'                     To: 'vehic wind float'
+%    From: '4'                     To: 'vehic wind non-float'
+%    From: '5'                     To: containers
+%    From: '6'                     To: tableware
+%    From: '7'                     To: headlamps
+%
+@relation Glass
+@attribute 'RI' real
+@attribute 'Na' real
+@attribute 'Mg' real
+@attribute 'Al' real
+@attribute 'Si' real
+@attribute 'K' real
+@attribute 'Ca' real
+@attribute 'Ba' real
+@attribute 'Fe' real
+@attribute 'Type' { 'build_wind_float', 'build_wind_non-float', 'vehic_wind_float', 'vehic_wind_non-float', containers, tableware, headlamps}

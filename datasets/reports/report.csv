@@ -1,0 +1,7 @@
+Method='retrain with  max radius'
+Novel class='setosa'
+Train_data,Test_data_number,novel_data_number,detected_novel_data_number,novel_class_accuracy,Total_accuracy,Mnew,Fnew,ERR
+
+
+289,90,26,19,73.076923,82.222222,26.923077,1.562500,17.777778,
+177,90,28,27,96.428571,90.000000,3.571429,8.064516,10.000000,

@@ -1,0 +1,7 @@
+Method='global class',,,,,,,,
+Novel class='setosa',,,,,,,,
+Train_data,Test_data_number,novel_data_number,detected_novel_data_number,novel_class_accuracy,accuracy,Mnew,Fnew,ERR
+,,,,,,,,
+85,50,45,44,97.777778,96,2.222222,0,2
+86,49,44,43,97.727273,93.877551,2.272727,0,4.081633
+83,52,47,46,97.87234,96.153846,2.12766,0,2.923077
